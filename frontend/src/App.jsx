@@ -44,7 +44,7 @@ export default function App() {
     try {
       const formData = new FormData();
       formData.append('file', file);
-      const response = await axios.post('http://localhost:8000/analyze', formData, {
+      const response = await axios.post('http://https://workflow-analyzer-backend.onrender.comlocalhost:8000/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       setData(response.data);
